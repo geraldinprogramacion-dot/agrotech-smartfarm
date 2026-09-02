@@ -1,4 +1,8 @@
-import stramlit as st
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent)) 
+
+import streamlit as st
 import pandas as pd
 
 from src.componente_datos import cargar_y_validar_datos_agro
@@ -102,4 +106,3 @@ if not df.empty:
         st.markdown("### 📈 Tendencia de Humedad en el Tiempo")
         st.line_chart(df_filtrado.set_index("timestamp")["humedad_suelo_pct"])
 
-        
