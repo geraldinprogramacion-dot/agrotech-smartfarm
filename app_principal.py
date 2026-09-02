@@ -72,10 +72,9 @@ if not df.empty:
     # --------------------------------------------------------------------------
         st.markdown("### 📊 Panel Operativo")
         prom_humedad, max_temp, parcelas_criticas = calcular_kpis_agro(df_filtrado)
-
         col1, col2, col3 = st.columns(3)
-        col1.metric("Humedad Promedio", f"{prom_humedad:.2f}%")
-        col2.metric("Temp. Máxima", f"{max_temp:.2f} °C")
+        col1.metric("Humedad Promedio", f"{prom_humedad}%")
+        col2.metric("Temp. Máxima", f"{max_temp} °C")
         col3.metric("Parcelas Críticas", f"{parcelas_criticas}")
 
     # --------------------------------------------------------------------------
@@ -85,8 +84,8 @@ if not df.empty:
         prom_humedad, max_temp, parcelas_criticas = calcular_kpis_agro(df_filtrado)
 
         col1, col2, col3 = st.columns(3)
-        col1.metric("Humedad Promedio", f"{prom_humedad:.2f}%")
-        col2.metric("Temp. Máxima", f"{max_temp:.2f} °C")
+        col1.metric("Humedad Promedio", f"{prom_humedad}%")
+        col2.metric("Temp. Máxima", f"{max_temp} °C")
         col3.metric("Parcelas Críticas", f"{parcelas_criticas}")
 
     # --------------------------------------------------------------------------
