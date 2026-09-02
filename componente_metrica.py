@@ -9,6 +9,6 @@ def calcular_kpis_agro(df):
 
     return {
         "humedad_promedio": humedad_promedio,
-        "temperatura_maxima": temperatura_maxima,
+        "temperatura_maximas": temperatura_maxima,
         "parcelas_criticas": parcelas_criticas
     }
